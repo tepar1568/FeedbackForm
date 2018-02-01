@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Feedback Form created using Bootstrap 4">
+        <meta name="author" content="Terrica Parker">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Feedback Form</h1>
+            <hr>
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-sm-12">
+                        <label for="feedback-name">Name<sup class="text-danger">* </sup></label>
+                    </div><!-- col-sm-12 -->
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="feedback-first-name" pattern="^[a-zA-Z]+$" placeholder="First name" required>
+                        <div class="invalid-feedback">
+                          Please type in your first name.
+                        </div>
+                    </div><!-- col-sm-6 -->
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="feedback-last-name" pattern="^[a-zA-Z]+$" placeholder="Last name" required>
+                        <div class="invalid-feedback">
+                          Please type in your last name.
+                      </div><!-- invalid-feedback -->
+                    </div><!-- col-sm-6 -->
+                </div><!-- form-row -->
+                <div class="form-row">
+                    <label for="feedback-email">Email<sup class="text-danger">* </sup></label>
+                    <input type="email" class="form-control" id="feedback-email" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                      Please type in your email.
+                  </div><!-- invalid-feedback -->
+                </div><!-- form-row -->
+                <div class="form-group">
+                    <label for="overall-experience">Overall Experience<sup class="text-danger">* </sup></label>
+                    <select class="form-control custom-select" name="overall-experience" required>
+                        <option value="">Select Rating</option>
+                        <option value="1">Great</option>
+                        <option value="2">Good</option>
+                        <option value="3">Average</option>
+                        <option value="4">Fair</option>
+                        <option value="5">Poor</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please choose a rating.
+                  </div><!-- invalid-feedback -->
+                </div><!-- form-group -->
+                <div class="form-group">
+                    <label for="select-service">What service was done:<sup class="text-danger">* </sup><sub>(You can select more than one)</sub></label>
+                    <select multiple class="form-control custom-select" name="select-service" required>
+                        <option value="0">Select service</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please choose a service.
+                  </div><!-- invalid-feedback -->
+                </div><!-- form-group -->
+                <div class="form-group">
+                    <label for="feedback-other-point-1">Other Key Point:<sup class="text-danger">* </sup></label>
+                    <select class="form-control custom-select" name="feedback-other-point-1" required>
+                        <option value="">Choose..</option>
+                        <option value="1">...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please choose a option.
+                  </div><!-- invalid-feedback -->
+                </div><!-- form-group -->
+                <div class="form-group">
+                    <label for="feedback-other-point-2">Other Key Point:<sup class="text-danger">* </sup></label>
+                    <select class="form-control custom-select" name="feedback-other-point-2" required>
+                        <option value="">Choose...</option>
+                        <option value="1">...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please choose a option.
+                  </div><!-- invalid-feedback -->
+                </div><!-- form-group -->
+                <div class="form-group">
+                     <label for="inputComments">Feel free to leave any comments, concerns, or improvements below:</label>
+                    <textarea id="imputComments" name="name" rows="8" cols="80"></textarea>
+                </div><!-- form-group -->
+
+                <input type="submit" class="btn btn-primary btn-lg float-right" value="Submit">
+
+            </form>
+        </div><!-- container -->
+
+
+        <!-- BOOTSTRAP CORE JAVASCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
